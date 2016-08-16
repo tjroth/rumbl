@@ -1,5 +1,7 @@
 # Rumbl
 
+Learning Phoenix sample application
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
