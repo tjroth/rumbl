@@ -18,7 +18,8 @@ defmodule Rumbl.Video do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, @required_fields, @optional_fields) #[:url, :title, :description])
+    |> cast(params, @required_fields, @optional_fields)
+    |> assoc_constraint(:category)#[:url, :title, :description])
     #|> validate_required([:url, :title, :description])
   end
 end
